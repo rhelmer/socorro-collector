@@ -7,7 +7,7 @@ import time
 
 from socorro.lib.ooid import createNewOoid
 from socorro.lib.util import DotDict
-from socorro.collector.throttler import DISCARD, IGNORE
+from collector.throttler import DISCARD, IGNORE
 from socorro.lib.datetimeutil import utc_now
 
 from configman import RequiredConfig, Namespace, class_converter

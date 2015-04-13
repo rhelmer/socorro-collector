@@ -4,7 +4,7 @@
 
 from nose.tools import eq_, ok_, assert_raises
 
-from socorro.collector.crashmover_app import CrashMoverApp
+from collector.crashmover_app import CrashMoverApp
 from socorro.lib.threaded_task_manager import ThreadedTaskManager
 from socorro.lib.util import DotDict, SilentFakeLogger
 from socorro.unittest.testbase import TestCase

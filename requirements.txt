@@ -1,5 +1,4 @@
-# dev requirements
-
+https://github.com/mozilla/socorro/archive/ec27c49.zip#egg=test-utils
 # sha256: 3a9LCmGDNaMrZmTUrgOKHej7raOyUDP5AhUQ7Ss5QaQ
 argparse==1.2.1
 

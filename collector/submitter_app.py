@@ -212,7 +212,7 @@ class SubmitterApp(FetchTransformSaveApp):
         return {
             "source.crashstorage_class": SubmitterFileSystemWalkerSource,
             "destination.crashstorage_class":
-                'socorro.collector.breakpad_submitter_utilities'
+                'collector.breakpad_submitter_utilities'
                 '.BreakpadPOSTDestination',
         }
 

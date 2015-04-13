@@ -8,7 +8,7 @@ import json
 
 from nose.tools import eq_, ok_, assert_raises
 
-from socorro.collector.submitter_app import (
+from collector.submitter_app import (
     SubmitterApp,
     SubmitterFileSystemWalkerSource,
     DBSamplingCrashSource

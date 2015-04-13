@@ -5,8 +5,8 @@
 import mock
 from nose.tools import eq_
 
-from socorro.collector.collector_app import CollectorApp
-from socorro.collector.wsgi_breakpad_collector import BreakpadCollector
+from collector.collector_app import CollectorApp
+from collector.wsgi_breakpad_collector import BreakpadCollector
 from socorro.unittest.testbase import TestCase
 from configman.dotdict import DotDict
 

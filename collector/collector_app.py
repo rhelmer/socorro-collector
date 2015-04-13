@@ -40,7 +40,7 @@ class CollectorApp(App):
     required_config.namespace('collector')
     required_config.collector.add_option(
         'collector_class',
-        default='socorro.collector.wsgi_breakpad_collector.BreakpadCollector',
+        default='collector.wsgi_breakpad_collector.BreakpadCollector',
         doc='the name of the class that handles collection',
         from_string_converter=class_converter
     )
@@ -52,7 +52,7 @@ class CollectorApp(App):
     required_config.namespace('throttler')
     required_config.throttler.add_option(
         'throttler_class',
-        default='socorro.collector.throttler.LegacyThrottler',
+        default='collector.throttler.LegacyThrottler',
         doc='the class that implements the throttling action',
         from_string_converter=class_converter
     )
