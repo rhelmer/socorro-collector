@@ -1,0 +1,40 @@
+Metadata-Version: 1.1
+Name: socorro-collector
+Version: 0.1
+Summary: Socorro is a server to accept Breakpad crash reports.
+Home-page: https://github.com/mozilla/socorro-collector
+Author: Mozilla
+Author-email: socorro-dev@mozilla.com
+License: MPL
+Description: Socorro Collector
+        -----------------
+        
+        A server for collecting crash reports from clients using the [Breakpad libraries](http://code.google.com/p/google-breakpad/)
+        
+        Documentation:
+        http://socorro.readthedocs.org
+        
+        Source code:
+        https://github.com/mozilla/socorro
+        https://github.com/mozilla/socorro-collector
+        
+        Releases:
+        https://github.com/mozilla/socorro/releases
+        
+        Installation instructions:
+        http://socorro.readthedocs.org/en/latest
+        
+        Socorro mailing list:
+        https://lists.mozilla.org/listinfo/tools-socorro
+        
+        Socorro/Breakpad IRC channel:
+        irc://irc.mozilla.org/breakpad
+        
+Keywords: socorro,breakpad,crash,reporting,minidump,stacktrace
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MPL License
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application

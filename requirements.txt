@@ -1,0 +1,82 @@
+# dev requirements
+
+# sha256: 3a9LCmGDNaMrZmTUrgOKHej7raOyUDP5AhUQ7Ss5QaQ
+argparse==1.2.1
+
+# mock has both a zip and a tarball available, and which one we get is random.
+# sha256: lvpN706AIAvoJ8P1EUfdez-ohzuSB-MyXUe6Rb8ppcE
+# sha256: 6QTt-5DahBKcBiUs06BfkLTuvBu1uF7pblb_bPaUONU
+mock==0.8.0
+
+# sha256: TmPMMyXedc-Y_61AvnL6aXU96CRpUXMXj3TANP5PUmA
+nose==1.3.0
+# sha256: r1v0XaSpFtsrY4z_2enWZoszAg4rjKn4ZNt5tJMxxv8
+poster==0.8.1
+# sha256: hHK_EwLbFb3yxDk6XpGAzb8ps_jtWwbAa_XGuo9DNYg
+mercurial==2.7.1
+# sha256: Yj_jJZOSGfYbQathJMV_SWDOT0hlFoRqqvfUd10qLto
+honcho==0.5.0
+# sha256: th84eGr2uNZEtTBVIBLWacdBX89YUt4yDykIANuXmD0
+gunicorn==18.0
+# sha256: wLOB1sItqTHoXj7-YSYp_jOgGsJbDwKKpjG4XYbVAos
+uWSGI==2.0.10
+# sha256: RsjrEON7PfBBeJVwaZ6bRgyiLm39JWyiDkIE2wz7K8U
+# sha256: FnmOimdGf1D4-bCAyOcKQfD_fS3QYedEI-U7x-2S-40
+configman==1.2.11
+# sha256: UV_5I0YlkugyHfi0jEfjQo-NQG7iK43ne--WnRrxEXE
+configobj==4.7.2
+# sha256: oz42dZy6Gowxw8AelDtO4gRgTW_xPdooH484k7I5EOY
+hbase-thrift==0.20.4
+# sha256: YjGaw0shgNRQpNknhzyyYA88E7zmsgd83XcMd7Oph-E
+isodate==0.4.7
+# sha256: Zm_VIvShBZ1bi0mW5Xb6eGL1BVKOEc8e9VRjEcYMPk0
+pika==0.9.8
+# sha256: SLcCp8pHnhvCwae4GHWgfUdCmBMmBZk-LLl59eCCd9c
+psycopg2==2.4.5
+# sha256: QQvqlt8kefozmGxAw-76nB57qVp_cHEcMVhgu-LWbH8
+# sha256: 2Fg3nvWYjUU0u4kJQy1pdCIQCq_ycimdZhM5g2ttrps
+urllib3==1.9.1
+# sha256: wn5AqzzPN_MKn3estJFzcNk0HiWr2o6Uub1IxxJ_fUg
+raven==3.4.1
+# sha256: KjGJ950ce4ohSaDng8C0IX-tmzCm59YEUPJVPcLA5X4
+simplejson==3.6.5
+# sha256: HwRtz17HEu076GhLnzPJW3bijNHIJdsPXhVXv9h7N0U
+# sha256: e3c179Ox4jI9yfzvBgs4DQX18YvQ8kf16edKYoJ53mY
+requests==2.5.1
+# sha256: M4j8GiynpdQmG00ePYtzQsv0vxz7NwIxHGCTIUMs7Xg
+# sha256: eoQsn4gsCyqxBk1We7n_9qIcnvvD2Zkgg61hk3h-05M
+six==1.7.3
+# sha256: RdsWgxKmgg_XhpfHtv0BlvOvkiyOvIhUDt0Nb6_tVU0
+statsd==2.1.2
+# sha256: gLPAyGSc5ZC9JYcVUPZnDqvi6YpdHvXkD5K4hZfYCB0
+thrift==0.8.0
+# sha256: xF7Ftf6qulO7rmndlxwoGDLxMy1ZSc1uXKJ3R_6SJWo
+web.py==0.36
+# sha256: x-YQyACVcEbATIAUqrjM6PC58ElcjNNJ5XwffKv0Dnk
+wsgiref==0.1.2
+# sha256: aM-CXyJ8guGsYeQjz8rZI_9zTCe1vdcXRJXRYsQsYCs
+ujson==1.33
+# sha256: TETsP5_wV7jHtMeL7KX92HEGAOqaHfQvMb_Lri8Fne4
+python-dateutil==2.1
+# sha256: HDW0rCBs7y0kgWyJ-Jzyid09OM98RJuz-re_bUPwGx8
+ordereddict==1.1
+
+# sometimes you get the tarball, sometimes you get the wheel
+# sha256: vP9eVeRaj-DDdx6AVgIdSHFN6WQh0e3uw20S9zdQOZc
+# sha256: wVmeZhdKbKtjPLa_XsJZDM4QTCPRY5XAK9pe2T6nlHw
+boto==2.28.0
+# sha256: cyu7F1hQihKEtT_Nzp2WqlPLY86T1Us40ob0KBoSrCQ
+pyquery==1.2.6
+cssselect==0.9.1
+# sha256: l2sTklJ8dzg-uCfef9RNrK8Sl6Y6oN9Sb0evMC9HnVQ
+path.py==5.1
+# sha256: FbQhMbJfN2Fl0ZX-ThewooMRGCqvkzDV61dbvtpaaYk
+# sha256: Yuh_1UU1-5MrSk2Uho21IyV6EDHIvGvTWMIBVDPmRts
+pep8==1.5.7
+# sha256: P6gKELNtUWhr93RPXcmWIs1cmM6O1kAi5imGiq_Bd2k
+# sha256: rEVxaVwQzhU2vNuhopS58tPmzJ0OoXG2fVCghkzj4EI
+pyflakes==0.8.1
+# sha256: Fq70HMTj2aSj46WXSBRRqosmuj5ovaLIILH-9wggbiE
+pyhs2==0.6.0
+# sha256: TzJCJuHuhaxBUgV5up3nAylAEmAuU2IX_Q50VuFH2IY
+sasl==0.1.3
