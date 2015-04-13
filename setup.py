@@ -19,7 +19,7 @@ def read(fname):
 
 
 setup(
-    name='socorro-collector',
+    name='collector',
     version='0.1',
     description=('Socorro is a server to accept Breakpad'
                  ' crash reports.'),

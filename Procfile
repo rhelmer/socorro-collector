@@ -1,1 +1,1 @@
-collector: gunicorn wsgi.collector
+collector: gunicorn collector.wsgi
