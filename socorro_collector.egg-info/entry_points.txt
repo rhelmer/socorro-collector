@@ -1,3 +1,0 @@
-[console_scripts]
-socorro = socorro.app.socorro_app:SocorroWelcomeApp.run
-

@@ -35,7 +35,7 @@ minidump-stackwalk/*.o
 minidump-stackwalk/stackwalker
 minidump-stackwalk/dumplookup
 minidump-stackwalk/get-minidump-instructions
-socorro.egg-info/
+socorro_collector.egg-info/
 dist/
 socorro-*.rpm
 
