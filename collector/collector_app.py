@@ -77,7 +77,7 @@ class CollectorApp(App):
     required_config.web_server.add_option(
         'wsgi_server_class',
         doc='a class implementing a wsgi web server',
-        default='socorro.webapi.servers.CherryPy',
+        default='socorro.webapi.servers.WSGIServer',
         from_string_converter=class_converter
     )
 
