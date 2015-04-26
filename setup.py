@@ -20,7 +20,7 @@ def read(fname):
 
 setup(
     name='collector',
-    version='0.1',
+    version='0.2',
     description=('Socorro is a server to accept Breakpad'
                  ' crash reports.'),
     long_description=open('README.md').read(),
