@@ -1,14 +1,19 @@
 Socorro Collector
 -----------------
 
-A server for collecting crash reports from clients using the [Breakpad libraries](http://code.google.com/p/google-breakpad/)
+A WSGI server for collecting multi-part HTTP form posts, and storing to
+a number of different backends (S3, PostgreSQL, ElasticSearch, HBase, or
+filesystem)
+
+This project is used by the Socorro crash collecting project for collecting
+crash reports from clients using the [Breakpad libraries](http://code.google.com/p/google-breakpad/), but can be used to retrieve any payload.
 
 Documentation:
 http://socorro.readthedocs.org
 
 Source code:
 https://github.com/mozilla/socorro
-https://github.com/mozilla/socorro-collector
+https://github.com/rhelmer/socorro-collector
 
 Releases:
 https://github.com/mozilla/socorro/releases
