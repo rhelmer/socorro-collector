@@ -9,9 +9,9 @@ Collector requires the ProductName and Version fields to be set. For example,
 to start the Collector using a Procfile runner (foreman or honcho should work)
 and submit a crash:
 
-export PORT=8888
-honcho start web
-curl -F 'ProductName=Blah' -F 'Version=1.0' 'http://localhost:8888/submit'
+    export PORT=8888
+    honcho start web
+    curl -F 'ProductName=Blah' -F 'Version=1.0' 'http://localhost:8888/submit'
 
 You can specify any other form fields you like. A "CrashID" should be returned,
 and you can find your data in the `./crashes/` directory.
