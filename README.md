@@ -111,11 +111,14 @@ crash reports from clients using the [Breakpad libraries](http://code.google.com
 Tests
 =====
 
-Unit tests
+Unit tests:
 
 ```
   nosetests tests/
 ```
+
+All unit tests should always pass, broken code or tests will be backed out.
+Pull requests must have passing Travis status to be considered.
 
 =====
 Links
