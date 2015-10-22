@@ -1,9 +1,18 @@
 Socorro Collector
 -----------------
 
-A WSGI server for collecting multi-part HTTP form posts, and storing to
-a number of different backends (S3, PostgreSQL, ElasticSearch, HBase, RabbitMQ,
-filesystem - or any combination of these)
+Mozilla and other organizations use the Socorro Collector to collect
+crash reports.
+
+Collector is a python (WSGI-compatible) server for collecting multi-part HTTP
+form posts, serializing to JSON, and storing to a number of different backends
+- S3, PostgreSQL, ElasticSearch, HBase, filesystem - or any
+combination of these.
+
+RabbitMQ can be used to queue up incoming crashes for processing. The Socorro
+Processor is suggested for this:
+https://github.com/rhelmer/socorro-processor
+
 
 Installing dependencies
 =======================
@@ -32,6 +41,7 @@ Alternatively, you can run Collector using a standalone built-in webserver
 (CherryPy):
 ```
   workon collector
+  export web_server__port='8888'
   socorro collector
 ```
 
@@ -47,6 +57,19 @@ To see a list of all keys:
 
 ```
   socorro collector --admin.print_conf=env
+```
+
+You can set these in the environment or put then in a `.env` file.
+
+For instance to store crashes in the Amazon Web Services (AWS) S3 service,
+you could use the following:
+
+```
+  # Store the crash in S3
+  storage__crashstorage_class='socorro.external.boto.crashstorage.BotoS3CrashStorage'
+  resource__boto__access_key='blah'
+  resource__boto__secret_access_key='blah'
+  resource__boto__bucket_name='blah'
 ```
 
 To generate an INI-style configuration file (with commented-out documentation):
@@ -94,7 +117,7 @@ Unit tests
 Links
 =====
 
-The Socorro family of projects:
+Other Socorro Crash Reporting apps:
 https://github.com/rhelmer/socorro-collector
 https://github.com/rhelmer/socorro-processor
 https://github.com/rhelmer/socorro-webapp
