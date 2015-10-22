@@ -10,8 +10,11 @@ form posts, serializing to JSON, and storing to a number of different backends:
 - S3, PostgreSQL, ElasticSearch, HBase, filesystem - or any
 combination of these.
 
-RabbitMQ can be used to queue incoming crashes for processing. The Socorro
-Processor is suggested for this:
+RabbitMQ can be used to queue incoming crashes for processing.  
+The Socorro Processor supports consuming this queue and symbolicating Breakpad
+minidumps with the debug symbols from your application, producing a useful
+stack trace:
+
 https://github.com/rhelmer/socorro-processor
 
 
