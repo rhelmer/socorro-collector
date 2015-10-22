@@ -24,7 +24,10 @@ Installing dependencies
 Using virtualenvwrapper and pip:
 ```
   mkvirtualenv collector
+  # use peep for production
   pip install -r requirements.txt
+  # use "python setup.py install" for production
+  python setup.py develop
 ```
 
 Running
