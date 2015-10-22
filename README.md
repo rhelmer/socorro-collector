@@ -19,7 +19,8 @@ https://github.com/rhelmer/socorro-processor
 
 
 Installing dependencies
-=======================
+-----------------------
+
 Using virtualenvwrapper and pip:
 ```
   mkvirtualenv collector
@@ -27,7 +28,7 @@ Using virtualenvwrapper and pip:
 ```
 
 Running
-=======
+-------
 
 Collector requires the ProductName and Version fields to be set. For example,
 to start the Collector using a Procfile runner (Foreman or Honcho should work,
@@ -37,7 +38,7 @@ Make sure the virtualenv is activated, and use Honcho (which was installed
 above):
 ```
   workon collector
-  export PORT=8888
+  export PORT-8888
   honcho start web
 ```
 
@@ -45,13 +46,12 @@ Alternatively, you can run Collector using a standalone built-in webserver
 (CherryPy):
 ```
   workon collector
-  export web_server__port='8888'
+  export web_server__port-'8888'
   socorro collector
 ```
 
-=============
 Configuration
-=============
+-------------
 
 Collector supports a number of configuration formats.
 
@@ -60,7 +60,7 @@ Environment variables are recommended.
 To see a list of all keys:
 
 ```
-  socorro collector --admin.print_conf=env
+  socorro collector --admin.print_conf-env
 ```
 
 You can set these in the environment or put then in a `.env` file.
@@ -70,46 +70,43 @@ you could use the following:
 
 ```
   # Store the crash in S3
-  storage__crashstorage_class='socorro.external.boto.crashstorage.BotoS3CrashStorage'
-  resource__boto__access_key='blah'
-  resource__boto__secret_access_key='blah'
-  resource__boto__bucket_name='blah'
+  storage__crashstorage_class-'socorro.external.boto.crashstorage.BotoS3CrashStorage'
+  resource__boto__access_key-'blah'
+  resource__boto__secret_access_key-'blah'
+  resource__boto__bucket_name-'blah'
 ```
 
 To generate an INI-style configuration file (with commented-out documentation):
 ```
-  socorro collector --admin.print_conf=ini
+  socorro collector --admin.print_conf-ini
 ```
 
 If you want to read a configuration file instead of using environment variables:
 ```
-  socorro collector --admin.conf=ini
+  socorro collector --admin.conf-ini
 ```
 
-==================
 Submitting Crashes
-==================
+------------------
 
 The minimum permissible crash report contains the ProductName and Version
 fields:
 
 ```
-  curl -F 'ProductName=Blah' -F 'Version=1.0' 'http://localhost:8888/submit'
+  curl -F 'ProductName-Blah' -F 'Version-1.0' 'http://localhost:8888/submit'
 ```
 
 You can specify any other form fields you like. A "CrashID" should be returned,
 and you can find your data in the `./crashes/` directory.
 
-============
 Data storage
-============
+------------
 
 This project is used by the Socorro crash collecting project for collecting
 crash reports from clients using the [Breakpad libraries](http://code.google.com/p/google-breakpad/), but can be used to collect arbitrary data. Form fields are converted to JSON and tend to be stored this way.
 
-=====
 Tests
-=====
+-----
 
 Unit tests:
 
@@ -120,9 +117,8 @@ Unit tests:
 All unit tests should always pass, broken code or tests will be backed out.
 Pull requests must have passing Travis status to be considered.
 
-=====
 Links
-=====
+-----
 
 Other Socorro Crash Reporting apps:
 https://github.com/rhelmer/socorro-collector
