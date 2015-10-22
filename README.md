@@ -52,8 +52,8 @@ Alternatively, you can run Collector using a standalone built-in webserver
   socorro collector
 ```
 
-Production configuration
-------------------------
+Production web service
+----------------------
 
 For production, Collector should be run as a WSGI app behind an HTTP proxy
 (Gunicorn strongly advises Nginx):
