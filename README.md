@@ -32,13 +32,12 @@ Running
 
 Collector requires the ProductName and Version fields to be set. For example,
 to start the Collector using a Procfile runner (Foreman or Honcho should work,
-so should Heroku) and submit a crash.
+so should Heroku):
 
-Make sure the virtualenv is activated, and use Honcho (which was installed
-above):
 ```
   workon collector
   export PORT-8888
+  # honcho is installed in the virtualenv
   honcho start web
 ```
 
@@ -49,6 +48,14 @@ Alternatively, you can run Collector using a standalone built-in webserver
   export web_server__port-'8888'
   socorro collector
 ```
+
+Production configuration
+------------------------
+
+For production, Collector should be run as a WSGI app behind an HTTP proxy
+(Gunicorn strongly advises Nginx):
+http://gunicorn-docs.readthedocs.org/en/latest/deploy.html
+
 
 Configuration
 -------------
