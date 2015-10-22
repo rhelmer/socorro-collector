@@ -48,7 +48,7 @@ Alternatively, you can run Collector using a standalone built-in webserver
 (CherryPy):
 ```
   workon collector
-  export web_server__port-'8888'
+  export web_server__port='8888'
   socorro collector
 ```
 
@@ -80,10 +80,10 @@ you could use the following:
 
 ```
   # Store the crash in S3
-  storage__crashstorage_class-'socorro.external.boto.crashstorage.BotoS3CrashStorage'
-  resource__boto__access_key-'blah'
-  resource__boto__secret_access_key-'blah'
-  resource__boto__bucket_name-'blah'
+  storage__crashstorage_class='socorro.external.boto.crashstorage.BotoS3CrashStorage'
+  resource__boto__access_key='blah'
+  resource__boto__secret_access_key='blah'
+  resource__boto__bucket_name='blah'
 ```
 
 To generate an INI-style configuration file (with commented-out documentation):
