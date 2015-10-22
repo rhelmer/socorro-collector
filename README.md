@@ -41,7 +41,9 @@ Configuration
 
 Collector supports a number of configuration formats.
 
-Environment variables are the recommended method. To see a list of all keys:
+Environment variables are recommended.
+
+To see a list of all keys:
 
 ```
   socorro collector --admin.print_conf=env
