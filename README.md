@@ -5,11 +5,12 @@ Mozilla and other organizations use the Socorro Collector to collect
 crash reports.
 
 Collector is a python (WSGI-compatible) server for collecting multi-part HTTP
-form posts, serializing to JSON, and storing to a number of different backends
+form posts, serializing to JSON, and storing to a number of different backends:
+
 - S3, PostgreSQL, ElasticSearch, HBase, filesystem - or any
 combination of these.
 
-RabbitMQ can be used to queue up incoming crashes for processing. The Socorro
+RabbitMQ can be used to queue incoming crashes for processing. The Socorro
 Processor is suggested for this:
 https://github.com/rhelmer/socorro-processor
 
